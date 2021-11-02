@@ -1,0 +1,13 @@
+h1 {
+    font-family: 'Quantico', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    text-transform: uppercase;
+    font-family: 'Quantico', sans-serif;
+}
