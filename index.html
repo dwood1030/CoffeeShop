@@ -18,14 +18,19 @@
 <body>
 
     <header>
-        <img class="logo" src="images/derbycitydrip-logo.png" alt="Derby City Drip logo">
         <nav class="top-nav">
-            <h3>
-                <a href="#">Home</a>
-                <a href="#locations">Location</a>
-                <a href="#menu">Menu</a>
-                <a href="#contact">Contact</a>
-            </h3>
+            <img class="logo" src="images/derbycitydrip-logo.png" alt="Derby City Drip logo">
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#locations">Location</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
@@ -46,7 +51,7 @@
             plunger pot spoon cappuccino bar aroma. Fair trade so coffee seasonal arabica seasonal bar.</p>
     </div>
 
-    <div class="location">
+    <div class="location" id="locations">
         <h2>location</h2>
         <p>1234 w. main st.<br>louisville, ky 40213</p>
         <p>P: 502-555-5555<br>E: hello@derbycitydrip.com</p>
@@ -55,23 +60,23 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <h2>hours</h2>
         <p>
-            <ul>
-                <li>SUN: CLOSED</li>
-                <li>MON: 6AM - 10PM</li>
-                <li>TUES: 6AM - 10PM</li>
-                <li>WED: 6AM - 10PM</li>
-                <li>THURS: 6AM - 10PM</li>
-                <li>FRI: 6AM - 10PM</li>
-                <li>SAT: 6AM - 10PM</li>
-            </ul>
+        <ul>
+            <li>SUN: CLOSED</li>
+            <li>MON: 6AM - 10PM</li>
+            <li>TUES: 6AM - 10PM</li>
+            <li>WED: 6AM - 10PM</li>
+            <li>THURS: 6AM - 10PM</li>
+            <li>FRI: 6AM - 10PM</li>
+            <li>SAT: 6AM - 10PM</li>
+        </ul>
         </p>
     </div>
 
-    
-        
+
+
 
     <div>
-        <h2>coffees</h2>
+        <h2 id="menu">coffees</h2>
         <p>Viennese so, kopi-luwak body, organic, java decaffeinated to go et decaffeinated cultivar. Affogato, chicory
             foam whipped as to go viennese irish instant bar caramelization acerbic.</p>
     </div>
@@ -225,7 +230,7 @@
     </div>
 
     <div>
-        <h2>join the ocd coffee club!</h2>
+        <h2 id="contact">join the ocd coffee club!</h2>
         <p>Milk, pumpkin spice mug sweet qui coffee plunger pot. Cappuccino crema lungo, sweet organic dripper, plunger
             pot et iced ut robusta cream. Fair trade beans, skinny seasonal doppio siphon coffee saucer.</p>
     </div>

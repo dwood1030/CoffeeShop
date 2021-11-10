@@ -2,13 +2,14 @@ body, html {
     height: 100%;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, ul {
     font-family: 'Quantico', sans-serif;
     text-transform: uppercase;
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 button {
@@ -20,6 +21,56 @@ button {
     padding: 15px 25px 15px 30px;
     border: none;
     font-size: large;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    font-weight: 1.6rem;
+    font-weight: 400;
+    color: black;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkittransition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 .hero-image-mug {
@@ -42,10 +93,6 @@ button {
     transform: translate(-50%, -50%);
 }
 
-header {
-    width: 100%;
-}
-
 .location  {
     display: flex;
     flex-direction: column;
@@ -59,11 +106,10 @@ header {
     height: 100%;
 }
 
-.logo {
-    width: 100%;
-}
+
 
 .beans {
     background-image: url(images/coffee-beans-bg.jpg);
     color: white;
+
 }
