@@ -5,11 +5,12 @@ body, html {
 h1, h2, h3, h4, ul {
     font-family: 'Quantico', sans-serif;
     text-transform: uppercase;
+    margin: 0;
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 button {
@@ -56,7 +57,7 @@ a:link {
 }
 
 .nav-link:hover {
-    color: blue;
+    color: #b98797;
 }
 
 .hamburger {
@@ -93,11 +94,32 @@ a:link {
     transform: translate(-50%, -50%);
 }
 
+.beans {
+    background-image: url(images/coffee-beans-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    margin: 0;
+    padding: 75px;
+}
+
+.beans>p {
+    width: 50%;
+}
+
 .location  {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    background-color: #233237;
+    color: #f2f2f2;
+    padding: 75px;
 }
 
 .google-maps {
@@ -106,15 +128,45 @@ a:link {
     height: 100%;
 }
 
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px
+}
 
+.menu-flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+}
 
-.beans {
-    background-image: url(images/coffee-beans-bg.jpg);
-    color: white;
+.menu-item {
+    width: 50%;
+    padding-top: 25px;
+}
 
+.coffees {
+    margin-bottom: 50px;
+}
+
+.teas {
+    margin: 50px;
+}
+
+.snacks {
+    margin: 50px;
 }
 
 @media only screen and (max-width: 768px) {
+    .logo {
+        width: 75%;
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -151,5 +203,13 @@ a:link {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu-flex-parent {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 100%;
     }
 }
