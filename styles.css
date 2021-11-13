@@ -152,14 +152,20 @@ a:link {
 
 .coffees {
     margin-bottom: 50px;
+    width: 50%;
+    text-align: center;
 }
 
 .teas {
     margin: 50px;
+    width: 50%;
+    text-align: center;
 }
 
 .snacks {
     margin: 50px;
+    width: 50%;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -207,6 +213,19 @@ a:link {
 
     .menu-flex-parent {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .coffees {
+        width: 100%;
+    }
+
+    .teas {
+        width: 100%;
+    }
+
+    .snacks {
+        width: 100%;
     }
 
     .menu-item {
