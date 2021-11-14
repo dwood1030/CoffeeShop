@@ -58,11 +58,7 @@ a:link {
 .nav-link {
     font-weight: 1.6rem;
     font-weight: 400;
-    color: black;
-}
-
-.nav-link:hover {
-    color: #b98797;
+    color: #f2f2f2;
 }
 
 .hamburger {
@@ -151,7 +147,7 @@ a:link {
 }
 
 .menu-item {
-    width: 50%;
+    width: 100%;
     padding-top: 25px;
 }
 
@@ -161,19 +157,19 @@ a:link {
 
 .coffees {
     margin-bottom: 50px;
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 
 .teas {
     margin: 50px;
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 
 .snacks {
     margin: 50px;
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 
@@ -203,9 +199,13 @@ a:link {
         margin: 2.5rem 0;
     }
 
-    .nav-link {
-        color: #f2f2f2;
-    }
+    /* .nav-link {
+        color: black;
+    } */
+    
+    /* .nav-link:hover {
+        color: #b98797;
+    } */
 
     .hamburger {
         display: block;
@@ -229,21 +229,21 @@ a:link {
         width: 100%;
     }
 
-    .coffees {
-        width: 100%;
+    /* .coffees {
+        width: 50%;
     }
 
     .teas {
-        width: 100%;
+        width: 50%;
     }
 
     .snacks {
-        width: 100%;
+        width: 50%;
     }
 
     .menu-item {
-        width: 100%;
-    }
+        width: 50%;
+    } */
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
