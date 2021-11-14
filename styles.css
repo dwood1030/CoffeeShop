@@ -8,6 +8,11 @@ h1, h2, h3, h4, ul {
     margin: 0;
 }
 
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     /* text-transform: uppercase; */
@@ -150,6 +155,10 @@ a:link {
     padding-top: 25px;
 }
 
+.menu-item>h4 {
+    font-size: 20px;
+}
+
 .coffees {
     margin-bottom: 50px;
     width: 50%;
@@ -168,30 +177,34 @@ a:link {
     text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
     .logo {
         width: 75%;
     }
     
     .nav-menu {
         position: fixed;
-        left: -100%;
+        left: -200%;
         top: 5rem;
         flex-direction: column;
         background-color: #233237;
         width: 100%;
-        border-radius: 10px;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px black;
+        z-index: 1000;
     }
 
-    .nav-menu:active {
+    .nav-menu.active {
         left: 0;
     }
 
     .nav-item {
         margin: 2.5rem 0;
+    }
+
+    .nav-link {
+        color: #f2f2f2;
     }
 
     .hamburger {
@@ -230,5 +243,15 @@ a:link {
 
     .menu-item {
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .logo {
+        width: 75%;
+    }
+    
+    .top-nav {
+        flex-direction: column;
     }
 }
