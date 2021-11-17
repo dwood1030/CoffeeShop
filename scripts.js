@@ -17,3 +17,11 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+// Javascript for contact form
+function validateForm() {
+    let x = document.forms["myForm"]["email"].value;
+    if (x == "") {
+      alert("Email is required");
+      return false;
+    }
+  }
