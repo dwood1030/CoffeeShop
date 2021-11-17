@@ -42,15 +42,6 @@ form {
     text-align: center;
 }
 
-span {
-    padding: 50px;
-    display: flex;
-    color: #f2f2f2;
-    font-family: 'Open Sans', sans-serif;
-    font-size: larger;
-    font-weight: 1000
-}
-
 input {
     border-radius: 5px;
     border: solid 1px;
@@ -257,6 +248,16 @@ a:link {
     color: #f2f2f2;
     text-align: center;
     font-size: xx-large;
+}
+
+#spanResult {
+    padding: 50px;
+    display: flex;
+    color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: larger;
+    font-weight: 1000;
+    text-align: center;
 }
 
 .join {
