@@ -18,10 +18,16 @@ function closeMenu() {
 }
 
 // Javascript for contact form
-function validateForm() {
-    let x = document.forms["myForm"]["email"].value;
-    if (x == "") {
-      alert("Email is required");
+function testVariable() {
+    var strText = document.getElementById("name").value;
+    var strText1 = document.getElementById("email").value;
+    var result = 'Thank you for signing up, ' + strText + '!';
+    if (strText == "") {
+      alert("Name is required!");
       return false;
-    }
-  }
+    } else if (strText1 == "") {
+        alert("Email is required!");
+        return false;
+    } else {
+      document.getElementById('spanResult').textContent = result;}
+}   
