@@ -295,45 +295,21 @@ a:link {
         width: 100%;
     }
 
-    .top-nav {
-        flex-direction: column;
-    }
-
-    .nav-menu {    
-        justify-content: flex-end;
-        align-items: center;
-        list-style-type: none;
-        left: 0;
-        top: auto;
-        flex-direction: row;
-        z-index: 0;
-        background: none;
-        box-shadow: none;
-        transition: none;
-        position: absolute;
-    }
-
-    .nav-item {
-        margin-left: 5rem;
-    }
-
-    .nav-link {
-        color: black;
-    }
     
-    .nav-link:hover {
-        color: #b98757;
-    }
-
-    .hamburger {
-        display: none;
-    }
 
     /*BEGIN LOCATION CHANGES*/
     .location {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    .google-maps {
+        width: 100%;
+    }
+
+    .location ul {
+        text-align: start;
     }
 
     /*BEGIN MENU CHANGES*/
@@ -368,5 +344,43 @@ a:link {
         flex-direction: row;
     }
 
+    .nav-menu {    
+        justify-content: flex-end;
+        align-items: center;
+        list-style-type: none;
+        left: 0;
+        top: auto;
+        flex-direction: row;
+        z-index: 0;
+        background: none;
+        box-shadow: none;
+        transition: none;
+        position: absolute;
+    }
 
+    .nav-item {
+        margin-left: 5rem;
+    }
+
+    .nav-link {
+        color: black;
+    }
+    
+    .nav-link:hover {
+        color: #b98757;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hours {
+        width: 100%;
+        text-align: start;
+    }
+
+    .location p:nth-child(6) {
+        width: 100%;
+        text-align: start;
+    }
 }
